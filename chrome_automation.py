@@ -24,6 +24,6 @@ print("Your query results :")
 for item in x:
     print("{0}{1}".format("\t" * 2, item.text))
 print("Latest release is :", releases[0])
-
+ 
 # Close the browser
 browser.quit()
