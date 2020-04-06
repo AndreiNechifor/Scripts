@@ -6,11 +6,12 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
 
-def open_first_link(withot_window=False):
+def open_first_link(without_window=False):
 
+    
     # Browser options
     opt = Options()
-    opt.headless = withot_window
+    opt.headless = without_window
     browser = webdriver.Chrome('chromedriver', options=opt)
 
     # Requesting page
@@ -34,9 +35,9 @@ def open_first_link(withot_window=False):
     time.sleep(3)
 
     # Navigating to first search resulted link
-    our_link = browser.find_element_by_link_text(
+    first_link = browser.find_element_by_link_text(
         'PEP 318 -- Decorators for Functions and Methods')
-    our_link.click()
+    first_link.click()
 
     # Asure you landed on the first link page by matching the expected title with actual page title
 
@@ -49,3 +50,6 @@ def open_first_link(withot_window=False):
 
     # Close the browser
     browser.quit()
+
+open_first_link()
+
