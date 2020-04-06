@@ -8,7 +8,6 @@ import time
 
 def open_first_link(without_window=False):
 
-    
     # Browser options
     opt = Options()
     opt.headless = without_window
@@ -17,26 +16,32 @@ def open_first_link(without_window=False):
     # Requesting page
     browser.get('https://www.python.org')
     search_box = browser.find_element_by_id("id-search-field")  # Search box
-    time.sleep(5)  # Wait for input
-
+    
     # Filling the search box with query statement
-
-    search_box.send_keys("Decorator")
-
+    # Sending a letter every half second
+    page=browser.current_url # get the initial page url and match it at line 41
+    print(page)
+    for e in "Decorator":
+        time.sleep(0.5)
+        search_box.send_keys(e)
     # Perform the search
     submit_button = browser.find_element_by_id("submit")
-    time.sleep(3)
+        #Check if the search_box was filled up with "keys".
+    if(search_box.get_attribute!=""):
+        time.sleep(10)
     submit_button.click()
-
     # Asure you landed on the query search page
 
     check = browser.find_element_by_tag_name("h2")
     assert check.text == "Search Python.org"
-    time.sleep(3)
+    time.sleep(2)
 
     # Navigating to first search resulted link
     first_link = browser.find_element_by_link_text(
         'PEP 318 -- Decorators for Functions and Methods')
+    if(page!=browser.current_url):
+        time.sleep(5)
+        print("URL CHANGED TO ",browser.current_url)
     first_link.click()
 
     # Asure you landed on the first link page by matching the expected title with actual page title
