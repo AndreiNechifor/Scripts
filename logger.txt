@@ -1,95 +1,63 @@
-Attempting to reach Python.org\@06-04-2020
-			Landed on Python.org main page
-Searching for submit button\@06-01-2020
-			Found the submit button
-Attempting to reach Python.org @ 06-04-2020
-			Landed on Python.org main page
-Searching for submit button @ 06-04-2020
-			Found the submit button
-Attempting to reach Python.org @ 06-04-2020 17:06:08
-			Landed on Python.org main page
-Searching for submit button @ 06-04-2020 17:06:08
-			Found the submit button
-Attempting to reach Python.org @ 06-04-2020 17:10:55
-			Landed on Python.org main page
-Searching for submit button @ 06-04-2020 17:10:55
-			Found the submit button
-URL CHANGED @ 06-04-2020 17:10:57
+URL CHANGED @ 07-04-2020 18:01:54
+			https://www.google.ro/?gws_rd=ssl
+--------------------------------------------------
+Waiting time for python logo excedeed @ 07-04-2020 18:01:57
+			Browser closed
+--------------------------------------------------
+Looking for Python logo on main page @ 07-04-2020 18:01:59
+			Python logo found. Continuing the script
+--------------------------------------------------
+Waiting time for search-box excedeed @ 07-04-2020 18:02:03
+			Browser closed
+--------------------------------------------------
+Looking for search-form on main page @ 07-04-2020 18:02:07
+			Search box found. Continuing the script
+--------------------------------------------------
+One of the requested elements does not belong to this page. @ 07-04-2020 18:02:07
+			Code error 'NoneType' object has no attribute 'send_keys'
+--------------------------------------------------
+URL CHANGED @ 07-04-2020 18:02:15
+			https://www.python.org/
+--------------------------------------------------
+Looking for Python logo on main page @ 07-04-2020 18:02:15
+			Python logo found. Continuing the script
+--------------------------------------------------
+Looking for search-form on main page @ 07-04-2020 18:02:15
+			Search box found. Continuing the script
+--------------------------------------------------
+Fill the search-box with term : Decorator. @ 07-04-2020 18:02:15
+			 Search box filled. Continuing the script
+--------------------------------------------------
+URL CHANGED @ 07-04-2020 18:02:16
 			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 06-04-2020 17:10:58
+--------------------------------------------------
+URL CHANGED @ 07-04-2020 18:02:17
 			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 06-04-2020 17:10:58
-			Found <<PEP 318 -- Decorators for Functions and Methods
-Attempting to reach Python.org @ 07-04-2020 14:06:40
-			Landed on Python.org main page
-Searching for submit button @ 07-04-2020 14:06:40
-			Found the submit button
-URL CHANGED @ 07-04-2020 14:06:41
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:06:42
+--------------------------------------------------
+URL CHANGED @ 07-04-2020 18:02:18
 			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:06:42
+--------------------------------------------------
+Search Results @ 07-04-2020 18:02:18
 			Found <<PEP 318 -- Decorators for Functions and Methods>>
-Attempting to reach Python.org @ 07-04-2020 14:07:57
-			An error occured Message: 
-
-Attempting to reach Python.org @ 07-04-2020 14:14:33
-			Landed on Python.org main page
-Searching for submit button @ 07-04-2020 14:14:34
-			Found the submit button
-URL CHANGED @ 07-04-2020 14:14:35
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:14:36
-			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:14:36
-			Found <<PEP 318 -- Decorators for Functions and Methods>>
-Attempting to reach Python.org @ 07-04-2020 14:23:43
-			Landed on Python.org main page
-Searching for submit button @ 07-04-2020 14:23:43
-			Found the submit button
-URL CHANGED @ 07-04-2020 14:23:44
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:23:45
-			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:23:45
-			Found <<PEP 318 -- Decorators for Functions and Methods>>
-Attempting to reach Python.org @ 07-04-2020 14:27:44
-			Landed on Python.org main page
-Searching for submit button @ 07-04-2020 14:27:44
-			Found the submit button
-URL CHANGED @ 07-04-2020 14:27:45
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:27:46
-			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:27:46
-			Found <<PEP 318 -- Decorators for Functions and Methods>>
-Searching for submit button @ 07-04-2020 14:38:00
-			Found the submit button
-URL CHANGED @ 07-04-2020 14:38:01
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:38:02
-			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:38:02
-			Found <<PEP 318 -- Decorators for Functions and Methods>>
-Searching for submit button @ 07-04-2020 14:38:35
-			Found the submit button
-URL CHANGED @ 07-04-2020 14:38:36
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:38:37
-			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:38:37
-			Found <<PEP 318 -- Decorators for Functions and Methods>>
-Searching for submit button @ 07-04-2020 14:41:38
-			Found the submit button
-URL CHANGED @ 07-04-2020 14:41:40
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:41:41
-			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:41:41
-			Found <<PEP 318 -- Decorators for Functions and Methods>>
-URL CHANGED @ 07-04-2020 14:45:35
-			https://www.python.org/search/?q=Decorator&submit=
-URL CHANGED @ 07-04-2020 14:45:36
-			https://www.python.org/dev/peps/pep-0318/
-Search Results @ 07-04-2020 14:45:36
-			Found <<PEP 318 -- Decorators for Functions and Methods>>
+--------------------------------------------------
+URL CHANGED @ 07-04-2020 18:02:28
+			https://www.bitacad.net/
+--------------------------------------------------
+Waiting time for python logo excedeed @ 07-04-2020 18:02:31
+			Browser closed
+--------------------------------------------------
+Looking for Python logo on main page @ 07-04-2020 18:02:33
+			Python logo found. Continuing the script
+--------------------------------------------------
+Waiting time for search-box excedeed @ 07-04-2020 18:02:37
+			Browser closed
+--------------------------------------------------
+Looking for search-form on main page @ 07-04-2020 18:02:41
+			Search box found. Continuing the script
+--------------------------------------------------
+One of the requested elements does not belong to this page. @ 07-04-2020 18:02:41
+			Code error 'NoneType' object has no attribute 'send_keys'
+--------------------------------------------------
+Test finished @ 07-04-2020 18:02:45
+			Succes rate : 1%
+--------------------------------------------------
