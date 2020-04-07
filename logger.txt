@@ -20,3 +20,16 @@ URL CHANGED @ 06-04-2020 17:10:58
 			https://www.python.org/dev/peps/pep-0318/
 Search Results @ 06-04-2020 17:10:58
 			Found <<PEP 318 -- Decorators for Functions and Methods
+Attempting to reach Python.org @ 07-04-2020 14:06:40
+			Landed on Python.org main page
+Searching for submit button @ 07-04-2020 14:06:40
+			Found the submit button
+URL CHANGED @ 07-04-2020 14:06:41
+			https://www.python.org/search/?q=Decorator&submit=
+URL CHANGED @ 07-04-2020 14:06:42
+			https://www.python.org/dev/peps/pep-0318/
+Search Results @ 07-04-2020 14:06:42
+			Found <<PEP 318 -- Decorators for Functions and Methods>>
+Attempting to reach Python.org @ 07-04-2020 14:07:57
+			An error occured Message: 
+

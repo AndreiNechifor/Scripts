@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from os import curdir
+from selenium.common.exceptions import NoSuchElementException,TimeoutException
 
 def logging(event,content):
 
@@ -23,20 +24,20 @@ def logging(event,content):
     logger.close()
 
 
-def open_first_link(without_window=False):
+def open_first_link(url,without_window=False):
     # Browser options
     opt = Options()
     opt.headless = without_window
     browser = webdriver.Chrome('chromedriver', options=opt)
 
     # Requesting page
-    browser.get('http://python.org')
+    browser.get(url)
     # Initial check.
     try: 
         main_page=WebDriverWait(browser,10).until(EC.title_is("Welcome to Python.org"))
         logging("Attempting to reach Python.org","Landed on Python.org main page")
-    except Exception :
-        logging("Attempting to reach Python.org","An error occured")
+    except TimeoutException as E :
+        logging("Attempting to reach Python.org","An error occured {0}".format(E))
     else:
         search_box = browser.find_element_by_id("id-search-field")  # Search box
         
@@ -47,10 +48,11 @@ def open_first_link(without_window=False):
             submit_button=WebDriverWait(browser,10).until(EC.presence_of_element_located((By.ID,"submit")))
             logging("Searching for submit button","Found the submit button")
             submit_button.click()
-        except Exception :
-            logging("Searching for submit button","An error occured")
+        except TimeoutException as E :
+            logging("Searching for submit button","An error occured {0}".format(E))
         logging("URL CHANGED",browser.current_url)
         # Asure you landed on the query search page
+
         check = browser.find_element_by_tag_name("h2")
         assert check.text == "Search Python.org"
 
@@ -72,5 +74,5 @@ def open_first_link(without_window=False):
         # Close the browser
         browser.quit()
 
-open_first_link()
+open_first_link('http://google.ro')
 
