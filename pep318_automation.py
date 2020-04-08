@@ -55,7 +55,7 @@ def open_first_link(url,without_window=False):
     except exceptions.MaxRetryError as e:
         logging('Connection ERROR:\n%s'%(str(e)),'Connection could not be esteablished')
         browser.quit()
-        exit()
+        return 0
     logging("URL CHANGED",browser.current_url)
 
     # Assert landing on main page
