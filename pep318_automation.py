@@ -33,7 +33,7 @@ def check_presence_by_xpath(xpath,element_name,browser):
         logging("Waiting time for {} excedeed".format(element_name),"Browser closed")  
         browser.quit()
     except Exception:
-        loggin('Unkown error',"")
+        logging('Unkown error',"")
         browser.quit()
     else:
         return x   
@@ -91,9 +91,13 @@ def open_first_link(url,without_window=False):
             time.sleep(5)
     except AttributeError as Error:
         logging('One of the requested elements does not belong to this page.','Code error %s' % Error)
+        browser.quit()
+        logging('Browser quit.',"")
+        return 0
     finally:
         # Close the browser
         browser.quit()
+        return 1
 #open_first_link('C:\\Users\\AMnechifor\\Desktop\\py\\Welcome to Python.org.html')
 # Testing
 test_pages=['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
