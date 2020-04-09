@@ -30,7 +30,7 @@ def check_presence_by_xpath(xpath,element_name,browser):
         logging('Looking for %s on %s page.' %(element_name,browser.current_url),'Continuing the script')
 
     except TimeoutException as e:
-        logging("Waiting time for {} excedeed".format(element_name),"Browser closed")  
+        logging("Waiting time for {} excedeed".format(element_name),"Browser closed with error : %s" %(e)) 
         browser.quit()
     except Exception:
         logging('Unkown error',"")
@@ -59,51 +59,54 @@ def open_first_link(url,without_window=False):
     logging("URL CHANGED",browser.current_url)
 
     # Assert landing on main page
-    logo = cpx('//*[@id="touchnav-wrapper"]/header/div/h1/a/img','python logo',browser)
-
-    try:
-        # Looking for search box and fill with querry term
-        search_box = cpx('//*[@id="id-search-field"]','search-box',browser)
+    cpx('//*[@id="homepage"]','Python logo on main page',browser)
+    search_box=cpx('//*[@id="id-search-field"]','Search form on python.org landing page',browser)
+    go_button=cpx('//*[@id="submit"]','GO Button',browser)
+    #Treat AttributeErrors
+    try:   
+        elements_list=['search_box','go_button']
+        # Elements that could not have the requested attributes
+        i=1
         search_box.send_keys('Decorator')
-        
-        # Searching for GO button and click it
-        submit_button=cpx('//*[@id="submit"]','GO Button',browser)   
-        submit_button.click()
-        logging("URL CHANGED",browser.current_url)
-        
-        # Asure you landed on the query search page
-        check = browser.find_element_by_tag_name("h2")
-        assert check.text == "Search Python.org"
+        logging('Fill the search box with querry terms','Decorator')
+        i=2
+        go_button.click()
+        logging('Perform button action','Click')
 
 
-        # Navigating to first search resulted link
-        first_link = browser.find_element_by_xpath('//*[@id="content"]/div/section/form/ul/li[1]/h3/a')
-        first_link.click()
-        logging("URL CHANGED",browser.current_url)
-
-        # Assure you landed on the first link page by matching the expected title with actual page title
-        header = browser.find_element_by_class_name("page-title")
-        assert(header.text == 'PEP 318 -- Decorators for Functions and Methods')
-        logging("URL CHANGED",browser.current_url)
-        logging("Search Results","Found <<{0}>>".format(header.text))
-        if(without_window==False):
-            print("Browser will close in 5 seconds")
-            time.sleep(5)
-    except AttributeError as Error:
-        logging('One of the requested elements does not belong to this page.','Code error %s' % Error)
+    except AttributeError as e:
+        logging('Error','Element %s does not have required attribute'%(elements_list[i-1]))
         browser.quit()
-        logging('Browser quit.',"")
+        logging('Browser quit','Error:%s'%(e))
         return 0
-    finally:
-        # Close the browser
-        browser.quit()
-        return 1
-#open_first_link('C:\\Users\\AMnechifor\\Desktop\\py\\Welcome to Python.org.html')
+        
+    else:
+        try:
+            search_page_header=cpx('//*[@id="content"]/div/section/h2','Search page header',browser)
+            print(search_page_header.text)
+            assert search_page_header.text =='Search Python.org'
+            first_link=cpx('//*[@id="content"]/div/section/form/ul/li[1]/h3/a','Required link',browser)
+            first_link.click()
+            logging("URL CHANGED",browser.current_url)
+            first_link_header=cpx('//*[@id="content"]/div/section/article/header/h1','Header of first link',browser)
+            assert(first_link_header.text == 'PEP 318 -- Decorators for Functions and Methods')
+        except exceptions.MaxRetryError:
+            logging('Error','Host refused comunication request')
+            browser.quit
+            return 0       
+            
+        else:
+            # Close the browser
+            if(without_window==False):
+                print("Browser will close in 5 seconds")
+            browser.quit()
+            return 1
+
 # Testing
 test_pages=['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
 succes_counter=0
 for e in test_pages:
-    succes_counter=open_first_link(e,without_window=True)
-succes_rate=float(succes_counter)/len(test_pages)*100
-logging('Test finished','Succes rate : {0}%'.format(succes_counter))
+    succes_counter+=open_first_link(e,without_window=True)
+succes_rate=(succes_counter/len(test_pages))*100
+logging('Test finished','Succes rate : {0}%'.format(succes_rate))
 print('Test finished')
