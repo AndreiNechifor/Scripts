@@ -1,373 +1,109 @@
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034130E8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 12:52:26
-			Connection could not be esteablished
+Test started for host : @ 09-04-2020 17:32:34
+			google.org
 --------------------------------------------------
-URL CHANGED @ 09-04-2020 12:52:32
-			https://www.google.ro/?gws_rd=ssl
+URL CHANGED @ 09-04-2020 17:32:37
+			https://www.google.org/
 --------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 12:52:38
-			Browser closed with error : Message: 
+Waiting time for Python logo on main page excedeed @ 09-04-2020 17:32:42
+			self.browser closed with error : Message: 
 
 --------------------------------------------------
-Unkown error @ 09-04-2020 12:52:44
+Unkown error @ 09-04-2020 17:32:48
 			
 --------------------------------------------------
-Unkown error @ 09-04-2020 12:52:52
+Unkown error @ 09-04-2020 17:32:56
 			
+--------------------------------------------------
+Error: 'NoneType' object has no attribute 'tag_name' @ 09-04-2020 17:33:00
+			Element None does not have required attribute
+--------------------------------------------------
+Browser quit @ 09-04-2020 17:33:04
+			Error:'NoneType' object has no attribute 'tag_name'
+--------------------------------------------------
+Test finished @ 09-04-2020 17:35:33
+			Succes rate : 0.0%
+--------------------------------------------------
+Test finished @ 09-04-2020 17:37:42
+			Succes rate : 0.0%
+--------------------------------------------------
+Test started for host : @ 09-04-2020 17:38:21
+			scratchpd.com
 --------------------------------------------------
 Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x039830D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 12:54:24
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03241328>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 17:38:22
 			Connection could not be esteablished
 --------------------------------------------------
-URL CHANGED @ 09-04-2020 12:54:30
+Test started for host : @ 09-04-2020 17:38:26
+			google.ro
+--------------------------------------------------
+URL CHANGED @ 09-04-2020 17:38:28
 			https://www.google.ro/?gws_rd=ssl
 --------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 12:54:35
-			Browser closed with error : Message: 
+Waiting time for Python logo on main page excedeed @ 09-04-2020 17:38:33
+			self.browser closed with error : Message: 
 
 --------------------------------------------------
-Unkown error @ 09-04-2020 12:54:41
+Unkown error @ 09-04-2020 17:38:39
 			
 --------------------------------------------------
-Unkown error @ 09-04-2020 12:54:49
+Unkown error @ 09-04-2020 17:38:47
 			
 --------------------------------------------------
-Error @ 09-04-2020 12:54:54
-			Element search_box does not have required attribute
+Error: 'NoneType' object has no attribute 'tag_name' @ 09-04-2020 17:38:51
+			Element None does not have required attribute
 --------------------------------------------------
-Browser quit @ 09-04-2020 12:54:58
-			Error:'NoneType' object has no attribute 'send_keys'
+Browser quit @ 09-04-2020 17:38:55
+			Error:'NoneType' object has no attribute 'tag_name'
 --------------------------------------------------
-URL CHANGED @ 09-04-2020 12:55:02
+Test started for host : @ 09-04-2020 17:38:57
+			python.org
+--------------------------------------------------
+URL CHANGED @ 09-04-2020 17:39:00
 			https://www.python.org/
 --------------------------------------------------
-Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 12:55:02
+Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 17:39:00
 			Continuing the script
 --------------------------------------------------
-Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 12:55:02
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 17:39:00
 			Continuing the script
 --------------------------------------------------
-Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 12:55:02
+Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 17:39:00
 			Continuing the script
 --------------------------------------------------
-Fill the search box with querry terms @ 09-04-2020 12:55:03
-			Decorators
---------------------------------------------------
-Perform button action @ 09-04-2020 12:55:03
-			Click
---------------------------------------------------
-Looking for Search page header on https://www.python.org/search/?q=Decorators&submit= page. @ 09-04-2020 12:55:03
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 09-04-2020 17:39:01
 			Continuing the script
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x039F30B8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 12:55:26
-			Connection could not be esteablished
---------------------------------------------------
-URL CHANGED @ 09-04-2020 12:55:32
-			https://www.google.ro/?gws_rd=ssl
---------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 12:55:37
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Unkown error @ 09-04-2020 12:55:43
-			
---------------------------------------------------
-Unkown error @ 09-04-2020 12:55:51
-			
---------------------------------------------------
-Error @ 09-04-2020 12:55:55
-			Element search_box does not have required attribute
---------------------------------------------------
-Browser quit @ 09-04-2020 12:55:59
-			Error:'NoneType' object has no attribute 'send_keys'
---------------------------------------------------
-URL CHANGED @ 09-04-2020 12:56:04
-			https://www.python.org/
---------------------------------------------------
-Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 12:56:04
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 09-04-2020 17:39:01
 			Continuing the script
 --------------------------------------------------
-Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 12:56:04
-			Continuing the script
---------------------------------------------------
-Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 12:56:04
-			Continuing the script
---------------------------------------------------
-Fill the search box with querry terms @ 09-04-2020 12:56:04
-			Decorators
---------------------------------------------------
-Perform button action @ 09-04-2020 12:56:05
-			Click
---------------------------------------------------
-Looking for Search page header on https://www.python.org/search/?q=Decorators&submit= page. @ 09-04-2020 12:56:05
-			Continuing the script
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x032130D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 12:57:28
-			Connection could not be esteablished
---------------------------------------------------
-URL CHANGED @ 09-04-2020 12:57:34
-			https://www.google.ro/?gws_rd=ssl
---------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 12:57:39
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Unkown error @ 09-04-2020 12:57:45
-			
---------------------------------------------------
-Unkown error @ 09-04-2020 12:57:53
-			
---------------------------------------------------
-Error @ 09-04-2020 12:57:57
-			Element search_box does not have required attribute
---------------------------------------------------
-Browser quit @ 09-04-2020 12:58:01
-			Error:'NoneType' object has no attribute 'send_keys'
---------------------------------------------------
-URL CHANGED @ 09-04-2020 12:58:06
-			https://www.python.org/
---------------------------------------------------
-Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 12:58:06
-			Continuing the script
---------------------------------------------------
-Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 12:58:06
-			Continuing the script
---------------------------------------------------
-Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 12:58:06
-			Continuing the script
---------------------------------------------------
-Fill the search box with querry terms @ 09-04-2020 12:58:06
-			Decorators
---------------------------------------------------
-Perform button action @ 09-04-2020 12:58:08
-			Click
---------------------------------------------------
-Looking for Search page header on https://www.python.org/search/?q=Decorators&submit= page. @ 09-04-2020 12:58:08
-			Continuing the script
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x032130A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 12:58:48
-			Connection could not be esteablished
---------------------------------------------------
-URL CHANGED @ 09-04-2020 12:58:55
-			https://www.google.ro/?gws_rd=ssl
---------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 12:59:00
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Unkown error @ 09-04-2020 12:59:06
-			
---------------------------------------------------
-Unkown error @ 09-04-2020 12:59:14
-			
---------------------------------------------------
-Error @ 09-04-2020 12:59:18
-			Element search_box does not have required attribute
---------------------------------------------------
-Browser quit @ 09-04-2020 12:59:22
-			Error:'NoneType' object has no attribute 'send_keys'
---------------------------------------------------
-URL CHANGED @ 09-04-2020 12:59:27
-			https://www.python.org/
---------------------------------------------------
-Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 12:59:27
-			Continuing the script
---------------------------------------------------
-Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 12:59:27
-			Continuing the script
---------------------------------------------------
-Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 12:59:27
-			Continuing the script
---------------------------------------------------
-Fill the search box with querry terms @ 09-04-2020 12:59:27
-			Decorators
---------------------------------------------------
-Perform button action @ 09-04-2020 12:59:28
-			Click
---------------------------------------------------
-Looking for Search page header on https://www.python.org/search/?q=Decorators&submit= page. @ 09-04-2020 12:59:28
-			Continuing the script
---------------------------------------------------
-Looking for Required link on https://www.python.org/search/?q=Decorators&submit= page. @ 09-04-2020 12:59:28
-			Continuing the script
---------------------------------------------------
-URL CHANGED @ 09-04-2020 12:59:30
-			https://www.python.org/dev/peps/pep-3129/
---------------------------------------------------
-Looking for Header of first link on https://www.python.org/dev/peps/pep-3129/ page. @ 09-04-2020 12:59:30
-			Continuing the script
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x032330E8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 13:00:07
-			Connection could not be esteablished
---------------------------------------------------
-URL CHANGED @ 09-04-2020 13:00:14
-			https://www.google.ro/?gws_rd=ssl
---------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 13:00:19
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Unkown error @ 09-04-2020 13:00:25
-			
---------------------------------------------------
-Unkown error @ 09-04-2020 13:00:33
-			
---------------------------------------------------
-Error @ 09-04-2020 13:00:37
-			Element search_box does not have required attribute
---------------------------------------------------
-Browser quit @ 09-04-2020 13:00:41
-			Error:'NoneType' object has no attribute 'send_keys'
---------------------------------------------------
-URL CHANGED @ 09-04-2020 13:00:46
-			https://www.python.org/
---------------------------------------------------
-Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 13:00:46
-			Continuing the script
---------------------------------------------------
-Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 13:00:46
-			Continuing the script
---------------------------------------------------
-Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 13:00:46
-			Continuing the script
---------------------------------------------------
-Fill the search box with querry terms @ 09-04-2020 13:00:46
-			Decorators
---------------------------------------------------
-Perform button action @ 09-04-2020 13:00:47
-			Click
---------------------------------------------------
-Looking for Search page header on https://www.python.org/search/?q=Decorators&submit= page. @ 09-04-2020 13:00:47
-			Continuing the script
---------------------------------------------------
-Waiting time for Required link excedeed @ 09-04-2020 13:00:52
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x040C30B8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 13:06:42
-			Connection could not be esteablished
---------------------------------------------------
-URL CHANGED @ 09-04-2020 13:06:48
-			https://www.google.ro/?gws_rd=ssl
---------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 13:06:53
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Unkown error @ 09-04-2020 13:06:59
-			
---------------------------------------------------
-Unkown error @ 09-04-2020 13:07:07
-			
---------------------------------------------------
-Error @ 09-04-2020 13:07:11
-			Element search_box does not have required attribute
---------------------------------------------------
-Browser quit @ 09-04-2020 13:07:15
-			Error:'NoneType' object has no attribute 'send_keys'
---------------------------------------------------
-URL CHANGED @ 09-04-2020 13:07:20
-			https://www.python.org/
---------------------------------------------------
-Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 13:07:21
-			Continuing the script
---------------------------------------------------
-Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 13:07:21
-			Continuing the script
---------------------------------------------------
-Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 13:07:21
-			Continuing the script
---------------------------------------------------
-Fill the search box with querry terms @ 09-04-2020 13:07:21
-			Decorator
---------------------------------------------------
-Perform button action @ 09-04-2020 13:07:21
-			Click
---------------------------------------------------
-Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 09-04-2020 13:07:21
-			Continuing the script
---------------------------------------------------
-Waiting time for Required link excedeed @ 09-04-2020 13:07:27
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x032A20E8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 09-04-2020 13:07:37
-			Connection could not be esteablished
---------------------------------------------------
-URL CHANGED @ 09-04-2020 13:07:44
-			https://www.google.ro/?gws_rd=ssl
---------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 13:07:49
-			Browser closed with error : Message: 
-
---------------------------------------------------
-Unkown error @ 09-04-2020 13:07:55
-			
---------------------------------------------------
-Unkown error @ 09-04-2020 13:08:03
-			
---------------------------------------------------
-Error @ 09-04-2020 13:08:07
-			Element search_box does not have required attribute
---------------------------------------------------
-Browser quit @ 09-04-2020 13:08:11
-			Error:'NoneType' object has no attribute 'send_keys'
---------------------------------------------------
-URL CHANGED @ 09-04-2020 13:08:16
-			https://www.python.org/
---------------------------------------------------
-Looking for Python logo on main page on https://www.python.org/ page. @ 09-04-2020 13:08:16
-			Continuing the script
---------------------------------------------------
-Looking for Search form on python.org landing page on https://www.python.org/ page. @ 09-04-2020 13:08:16
-			Continuing the script
---------------------------------------------------
-Looking for GO Button on https://www.python.org/ page. @ 09-04-2020 13:08:16
-			Continuing the script
---------------------------------------------------
-Fill the search box with querry terms @ 09-04-2020 13:08:16
-			Decorator
---------------------------------------------------
-Perform button action @ 09-04-2020 13:08:17
-			Click
---------------------------------------------------
-Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 09-04-2020 13:08:17
-			Continuing the script
---------------------------------------------------
-Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 09-04-2020 13:08:17
-			Continuing the script
---------------------------------------------------
-URL CHANGED @ 09-04-2020 13:08:18
+URL CHANGED @ 09-04-2020 17:39:02
 			https://www.python.org/dev/peps/pep-0318/
 --------------------------------------------------
-Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 09-04-2020 13:08:18
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 09-04-2020 17:39:02
 			Continuing the script
 --------------------------------------------------
-URL CHANGED @ 09-04-2020 13:08:29
+Test started for host : @ 09-04-2020 17:39:07
+			www.bitacad.net
+--------------------------------------------------
+URL CHANGED @ 09-04-2020 17:39:13
 			https://www.bitacad.net/
 --------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 09-04-2020 13:08:34
-			Browser closed with error : Message: 
+Waiting time for Python logo on main page excedeed @ 09-04-2020 17:39:18
+			self.browser closed with error : Message: 
 
 --------------------------------------------------
-Unkown error @ 09-04-2020 13:08:40
+Unkown error @ 09-04-2020 17:39:24
 			
 --------------------------------------------------
-Unkown error @ 09-04-2020 13:08:48
+Unkown error @ 09-04-2020 17:39:32
 			
 --------------------------------------------------
-Error @ 09-04-2020 13:08:52
-			Element search_box does not have required attribute
+Error: 'NoneType' object has no attribute 'tag_name' @ 09-04-2020 17:39:36
+			Element None does not have required attribute
 --------------------------------------------------
-Browser quit @ 09-04-2020 13:08:56
-			Error:'NoneType' object has no attribute 'send_keys'
+Browser quit @ 09-04-2020 17:39:40
+			Error:'NoneType' object has no attribute 'tag_name'
 --------------------------------------------------
-Test finished @ 09-04-2020 13:08:56
+Test finished @ 09-04-2020 17:39:40
 			Succes rate : 25.0%
 --------------------------------------------------
