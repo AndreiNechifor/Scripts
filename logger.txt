@@ -107,3 +107,164 @@ Browser quit @ 09-04-2020 17:39:40
 Test finished @ 09-04-2020 17:39:40
 			Succes rate : 25.0%
 --------------------------------------------------
+Test started for host : @ 10-04-2020 12:51:15
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03212328>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 10-04-2020 12:51:16
+			Connection could not be esteablished
+--------------------------------------------------
+Test started for host : @ 10-04-2020 12:51:38
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x031C2328>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 10-04-2020 12:51:39
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 10-04-2020 12:51:41
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:51:45
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:51:53
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:52:01
+			
+--------------------------------------------------
+Error: 'NoneType' object has no attribute 'tag_name' @ 10-04-2020 12:52:06
+			Element None does not have required attribute
+--------------------------------------------------
+Browser quit @ 10-04-2020 12:52:10
+			Error:'NoneType' object has no attribute 'tag_name'
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:52:14
+			
+--------------------------------------------------
+Test started for host : @ 10-04-2020 12:54:28
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03152310>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 10-04-2020 12:54:29
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 10-04-2020 12:54:31
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:54:35
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:54:44
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:54:52
+			
+--------------------------------------------------
+Error: 'NoneType' object has no attribute 'tag_name' @ 10-04-2020 12:54:56
+			Element None does not have required attribute
+--------------------------------------------------
+Browser quit @ 10-04-2020 12:55:00
+			Error:'NoneType' object has no attribute 'tag_name'
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:55:04
+			
+--------------------------------------------------
+Element does not have the required element @ 10-04-2020 12:55:08
+			'NoneType' object has no attribute 'text'
+--------------------------------------------------
+Browser exited with error @ 10-04-2020 12:55:08
+			
+--------------------------------------------------
+Test started for host : @ 10-04-2020 12:55:14
+			google.ro
+--------------------------------------------------
+URL CHANGED @ 10-04-2020 12:55:16
+			https://www.google.ro/?gws_rd=ssl
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 10-04-2020 12:55:21
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:55:28
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:55:36
+			
+--------------------------------------------------
+Error: 'NoneType' object has no attribute 'tag_name' @ 10-04-2020 12:55:40
+			Element None does not have required attribute
+--------------------------------------------------
+Browser quit @ 10-04-2020 12:55:44
+			Error:'NoneType' object has no attribute 'tag_name'
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:55:48
+			
+--------------------------------------------------
+Element does not have the required element @ 10-04-2020 12:55:52
+			'NoneType' object has no attribute 'text'
+--------------------------------------------------
+Browser exited with error @ 10-04-2020 12:55:52
+			
+--------------------------------------------------
+Test started for host : @ 10-04-2020 12:55:58
+			python.org
+--------------------------------------------------
+URL CHANGED @ 10-04-2020 12:56:01
+			https://www.python.org/
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 10-04-2020 12:56:01
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 10-04-2020 12:56:01
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 10-04-2020 12:56:01
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 10-04-2020 12:56:02
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 10-04-2020 12:56:02
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 10-04-2020 12:56:03
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 10-04-2020 12:56:03
+			Continuing the script
+--------------------------------------------------
+Test started for host : @ 10-04-2020 12:56:07
+			www.bitacad.net
+--------------------------------------------------
+URL CHANGED @ 10-04-2020 12:56:15
+			https://www.bitacad.net/
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 10-04-2020 12:56:20
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:56:26
+			
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:56:34
+			
+--------------------------------------------------
+Error: 'NoneType' object has no attribute 'tag_name' @ 10-04-2020 12:56:38
+			Element None does not have required attribute
+--------------------------------------------------
+Browser quit @ 10-04-2020 12:56:43
+			Error:'NoneType' object has no attribute 'tag_name'
+--------------------------------------------------
+Unkown error @ 10-04-2020 12:56:47
+			
+--------------------------------------------------
+Element does not have the required element @ 10-04-2020 12:56:51
+			'NoneType' object has no attribute 'text'
+--------------------------------------------------
+Browser exited with error @ 10-04-2020 12:56:51
+			
+--------------------------------------------------
+Test finished @ 10-04-2020 12:56:55
+			Succes rate : 25.0%
+--------------------------------------------------
