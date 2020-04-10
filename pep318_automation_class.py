@@ -22,7 +22,6 @@ class AccesPep318():
         self.succes=0
         self.webdriver=None
         
-
     @staticmethod
     def logging(event,content):
         logger = open('logger.txt','a+')
@@ -37,15 +36,14 @@ class AccesPep318():
         try:
             self.webdriver=WebDriverWait(self.browser,5).until(EC.presence_of_element_located((By.XPATH,xpath)))
             self.logging('Looking for %s on %s page.' %(element_name,self.browser.current_url),'Continuing the script')
-
         except TimeoutException as e:
-            AccesPep318.logging("Waiting time for {} excedeed".format(element_name),"self.browser closed with error : %s" %(e)) 
+            self.logging("Waiting time for {} excedeed".format(element_name),"self.browser closed with error : %s" %(e)) 
             self.browser.quit()
-            AccesPep318.keep_testing=False
+            return False
         except Exception:
-            AccesPep318.keep_testing=False
             AccesPep318.logging('Unkown error',"")
             self.browser.quit()
+            return False
         else:
             return self.webdriver   
     # Request the url
@@ -63,9 +61,9 @@ class AccesPep318():
                 AccesPep318.logging('Connection ERROR:\n%s'%(str(e)),'Connection could not be esteablished')
                 self.browser.quit()
                 self.logging("Browser exited with error","")
-                AccesPep318.keep_testing=False
                 self.succes=0
-                return 0
+                return False
+        return True
     # First page method
     def first_page(self):
             
@@ -88,7 +86,11 @@ class AccesPep318():
             self.browser.quit()
             AccesPep318.logging('Browser quit','Error:%s'%(e))
             self.succes=0
-            return 0
+            return False
+        self.succes=1
+        return True
+        
+        
     # Search page method 
     def open_search_result(self):
         try:
@@ -101,15 +103,16 @@ class AccesPep318():
             assert(first_link_header.text == 'PEP 318 -- Decorators for Functions and Methods')
         except exceptions.MaxRetryError:
             AccesPep318.logging('Error','Host refused comunication request')
-            self.browser.quit
+            self.browser.quit()
             AccesPep318.keep_testing=False
             self.succes=0
-            return 0
+            return False
         except AttributeError as e:
             self.logging('Element does not have the required element',str(e))
             self.logging('Browser exited with error',"")
             self.browser.quit()
-            return 0
+            self.succes=0
+            return False
 
         else:
             # Close the browser
@@ -119,34 +122,42 @@ class AccesPep318():
             self.browser.quit()
             self.succes=1
             self.logging('Succesfuly finished the test','Browser closed with no error code !')
-            return 1
+        return True
     # Testing method is calling all the methods defined previously
     def test_method(self,url):
-        AccesPep318.keep_testing=True
-        while(AccesPep318.keep_testing==True):
-            self.request_url(url)
-            self.first_page()
-            self.open_search_result()
-            if(AccesPep318.keep_testing==True):
-                break
-            
+        if not(self.request_url(url)):
+            return -1
+        if not(self.first_page()):
+            return -1
+        if not(self.open_search_result()):
+            return -1
+        
+element=AccesPep318()
+# Case 1 # working
+e.test_method('http://python.org')
 
-# Testing
-if(__name__=="__main__"):
-    # Testing
-    test_pool=Pool()
-    test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
-    succes_counter = 0
-    e=AccesPep318(without_window=False)
-    print(e.succes)
+# Case 2 # not working
+for link in  test_pages:
+    element.test_method(link)
+    succes_counter+=element.succes
+    element.browser.quit
+succes_rate=succes_counter/len(test_pages)*100
+print("Test finished. Score :",str(succes_rate))
 
-    for link in test_pool.imap(e.test_method,test_pages):
-        e.test_method(link)
-        succes_counter+=e.succes
-    succes_rate = (succes_counter/len(test_pages))*100
-    AccesPep318.logging('Test finished','Succes rate : {0}%'.format(succes_rate))
-    print('Test finished')
+# Case 3 # working
+test_pool=Pool()
+succes_counter=0
+test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
+for link in test_pool.imap(element.test_method,test_pages):
+    element.test_method(link)
+    succes_counter+=element.succes
+succes_rate=succes_counter/len(test_pages)*100
+print("Test finished. Score :",str(succes_rate))
+'''
+for link in  test_pages:
+    element.test_method(link)
+    succes_counter+=element.succes
+    element.browser.quit
+succes_rate=succes_counter/len(test_pages)*100
 
-
-
-
+print("Test finished. Score :",str(succes_rate))
