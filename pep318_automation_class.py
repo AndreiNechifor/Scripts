@@ -3,17 +3,19 @@
 # python.org > Search for pep 318 > assert search page > open first link > assert first link page
 # Class edit
 
+import sys
 import time
 from selenium import webdriver
+from multiprocessing import Pool
+from urllib3 import poolmanager,exceptions,PoolManager,HTTPConnectionPool,HTTPSConnectionPool
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common import action_chains,keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException,TimeoutException
-from urllib3 import poolmanager,exceptions
-from multiprocessing import Pool
+
 class AccesPep318():
+
     def __init__(self,without_window=False):
         self.without_window=without_window
         self.opts=Options()
@@ -21,6 +23,7 @@ class AccesPep318():
         self.browser=webdriver.Chrome('chromedriver',options=self.opts)
         self.succes=0
         self.webdriver=None
+        self.r=PoolManager(5)
         
     @staticmethod
     def logging(event,content):
@@ -41,36 +44,38 @@ class AccesPep318():
             self.browser.quit()
             return False
         except Exception:
-            AccesPep318.logging('Unkown error',"")
+            self.logging('Unkown error',"")
             self.browser.quit()
             return False
         else:
             return self.webdriver   
+
     # Request the url
     def request_url(self,url):
         """ This method request the url, and treats the errors that are suposed to appear"""
         self.host_name=url[url.find("//")+2:]
         self.logging('Test started for host :',self.host_name)
-        try:
-                    
-                r = poolmanager.PoolManager()
-                r.request('GET',url)
+        try:    
+                self.r.urlopen('GET',url)
                 self.browser.get(url)
                 self.logging("URL CHANGED",self.browser.current_url)
+
         except exceptions.MaxRetryError as e:
-                AccesPep318.logging('Connection ERROR:\n%s'%(str(e)),'Connection could not be esteablished')
+                self.logging('Connection ERROR:\n%s'%(str(e)),'Connection could not be esteablished')
                 self.browser.quit()
                 self.logging("Browser exited with error","")
                 self.succes=0
                 return False
-        return True
+
+        return True # No error occured.
+    
     # First page method
     def first_page(self):
             
         """ This method request first page objects, namely Python.org home-page and submit their specific actions"""
         self.cpx('//*[@id="homepage"]','Python logo on main page')
-        search_box=self.cpx('//*[@id="id-search-field"]','Search form on python.org landing page')
-        go_button=self.cpx('//*[@id="submit"]','GO Button')
+        search_box = self.cpx('//*[@id="id-search-field"]','Search form on python.org landing page')
+        go_button = self.cpx('//*[@id="submit"]','GO Button')
         # Treat AttributeErrors on main page
         try:
             actions = [search_box,go_button]
@@ -80,38 +85,37 @@ class AccesPep318():
                     action.send_keys('Decorator')
                 else:
                     action.click()
+                    
         except AttributeError as e:
-            AccesPep318.keep_testing=False
-            AccesPep318.logging('Error: %s'%(e.args),'Element %s does not have required attribute'%(str(actions[i])))
+            self.logging('Error: %s'%(e.args),'Element %s does not have required attribute'%(str(actions[i])))
             self.browser.quit()
-            AccesPep318.logging('Browser quit','Error:%s'%(e))
+            self.logging('Browser quit','Error:%s'%(e))
             self.succes=0
             return False
+        
         self.succes=1
         return True
-        
-        
+           
     # Search page method 
     def open_search_result(self):
         try:
             search_page_header = self.cpx('//*[@id="content"]/div/section/h2','Search page header')
-            assert search_page_header.text
+            assert search_page_header.text =="Search Python.org"
             first_link = self.cpx('//*[@id="content"]/div/section/form/ul/li[1]/h3/a','Required link')
             first_link.click()
-            AccesPep318.logging("URL CHANGED",self.browser.current_url)
+            self.logging("URL CHANGED",self.browser.current_url)
             first_link_header = self.cpx('//*[@id="content"]/div/section/article/header/h1','Header of first link')
             assert(first_link_header.text == 'PEP 318 -- Decorators for Functions and Methods')
         except exceptions.MaxRetryError:
-            AccesPep318.logging('Error','Host refused comunication request')
+            self.logging('Error','Host refused comunication request')
             self.browser.quit()
-            AccesPep318.keep_testing=False
-            self.succes=0
+            self.succes = 0
             return False
         except AttributeError as e:
             self.logging('Element does not have the required element',str(e))
             self.logging('Browser exited with error',"")
             self.browser.quit()
-            self.succes=0
+            self.succes = 0 
             return False
 
         else:
@@ -125,39 +129,48 @@ class AccesPep318():
         return True
     # Testing method is calling all the methods defined previously
     def test_method(self,url):
-        if not(self.request_url(url)):
-            return -1
-        if not(self.first_page()):
-            return -1
-        if not(self.open_search_result()):
-            return -1
         
-element=AccesPep318()
-# Case 1 # working
-e.test_method('http://python.org')
-
-# Case 2 # not working
-for link in  test_pages:
-    element.test_method(link)
-    succes_counter+=element.succes
-    element.browser.quit
-succes_rate=succes_counter/len(test_pages)*100
-print("Test finished. Score :",str(succes_rate))
-
-# Case 3 # working
-test_pool=Pool()
+        if not(self.request_url(url)):
+            self.r.clear()
+            return 0
+        if not(self.first_page()):
+            self.r.clear()
+            return 0
+        if not(self.open_search_result()):
+            self.r.clear()
+            return 0
+        return 1
+        
+# Test area
 succes_counter=0
-test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
-for link in test_pool.imap(element.test_method,test_pages):
-    element.test_method(link)
-    succes_counter+=element.succes
-succes_rate=succes_counter/len(test_pages)*100
-print("Test finished. Score :",str(succes_rate))
-'''
-for link in  test_pages:
-    element.test_method(link)
-    succes_counter+=element.succes
-    element.browser.quit
-succes_rate=succes_counter/len(test_pages)*100
+element=AccesPep318(without_window=False)
+if(int(sys.argv[1])==1):
+    print("Running test number 1")
+    # Case 1 # working
+    element.logging('Testing case no.',"1")
+    element.test_method('http://python.org')
+elif(int(sys.argv[1])==2):
 
-print("Test finished. Score :",str(succes_rate))
+    # Case 2 # not working
+    print("Running test number 2")
+    element.logging('Testing case no.',"2")
+    test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
+    for link in  test_pages:
+        succes_counter+=element.test_method(link)
+    succes_rate=succes_counter/len(test_pages)*100
+    print("Test finished. Score :",str(succes_rate))
+
+elif(int(sys.argv[1])==3 ):
+    # Case 3 # working
+    print("Running test number 3")
+    element.logging('Testing case no.',"3")
+    test_pool=Pool()
+    test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
+    for link in test_pool.imap(element.test_method,test_pages):
+        succes_counter+=element.test_method(link)
+    succes_rate=succes_counter/len(test_pages)*100
+    print("Test finished. Score :",str(succes_rate))
+else:
+    print(sys.argv)
+    print('Testul nu exista')
+print(succes_rate)
