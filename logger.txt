@@ -1,433 +1,420 @@
-Test started for host : @ 13-04-2020 13:33:19
+Test started for host : @ 13-04-2020 17:05:33
 			scratchpd.com
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03571358>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:33:20
-			Connection could not be esteablished
+Test started for host : @ 13-04-2020 17:19:16
+			scratchpd.com
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:33:24
-			google.ro
+Requesting url  @ 13-04-2020 17:19:38
+			http://scratchpd.com
 --------------------------------------------------
-URL CHANGED @ 13-04-2020 13:33:26
-			https://www.google.ro/?gws_rd=ssl
+URL CHANGED @ 13-04-2020 17:19:38
+			http://scratchpd.com/
 --------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 13-04-2020 13:33:31
+Finished request for @ 13-04-2020 17:19:38
+			http://scratchpd.com
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:19:43
 			self.browser closed with error : Message: 
 
 --------------------------------------------------
-Unkown error @ 13-04-2020 13:33:37
+Unkown error @ 13-04-2020 17:19:50
 			
 --------------------------------------------------
-Unkown error @ 13-04-2020 13:33:45
+Unkown error @ 13-04-2020 17:20:00
 			
 --------------------------------------------------
-Error: 'NoneType' object has no attribute 'tag_name' @ 13-04-2020 13:33:49
-			Element None does not have required attribute
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:20:04
+			Element False does not have required attribute
 --------------------------------------------------
-Browser quit @ 13-04-2020 13:33:53
-			Error:'NoneType' object has no attribute 'tag_name'
+Browser quit @ 13-04-2020 17:20:08
+			Error:'bool' object has no attribute 'tag_name'
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:33:55
-			python.org
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:34:41
-			scratchpd.com
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03231340>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:34:42
-			Connection could not be esteablished
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:34:46
+Test started for host : @ 13-04-2020 17:20:10
 			google.ro
 --------------------------------------------------
-URL CHANGED @ 13-04-2020 13:34:48
+Requesting url  @ 13-04-2020 17:20:12
+			http://google.ro
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:20:12
 			https://www.google.ro/?gws_rd=ssl
 --------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 13-04-2020 13:34:53
+Finished request for @ 13-04-2020 17:20:12
+			http://google.ro
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:20:17
 			self.browser closed with error : Message: 
 
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:36:01
-			scratchpd.com
+Unkown error @ 13-04-2020 17:20:23
+			
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03111358>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:36:02
-			Connection could not be esteablished
+Unkown error @ 13-04-2020 17:20:31
+			
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:36:06
-			google.ro
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:20:35
+			Element False does not have required attribute
 --------------------------------------------------
-URL CHANGED @ 13-04-2020 13:36:08
-			https://www.google.ro/?gws_rd=ssl
+Browser quit @ 13-04-2020 17:20:39
+			Error:'bool' object has no attribute 'tag_name'
 --------------------------------------------------
-Waiting time for Python logo on main page excedeed @ 13-04-2020 13:36:13
+Test started for host : @ 13-04-2020 17:20:41
+			python.org
+--------------------------------------------------
+Requesting url  @ 13-04-2020 17:20:43
+			http://python.org
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:20:43
+			https://www.python.org/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:20:43
+			http://python.org
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 13-04-2020 17:20:43
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 13-04-2020 17:20:43
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 13-04-2020 17:20:43
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:20:44
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:20:44
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:20:45
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 13-04-2020 17:20:46
+			Continuing the script
+--------------------------------------------------
+Succesfuly finished the test @ 13-04-2020 17:20:48
+			Browser closed with no error code !
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:20:50
+			www.bitacad.net
+--------------------------------------------------
+Requesting url  @ 13-04-2020 17:20:56
+			http://www.bitacad.net
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:20:56
+			https://www.bitacad.net/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:20:56
+			http://www.bitacad.net
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:21:01
 			self.browser closed with error : Message: 
 
 --------------------------------------------------
-Unkown error @ 13-04-2020 13:36:20
+Unkown error @ 13-04-2020 17:21:07
 			
 --------------------------------------------------
-Unkown error @ 13-04-2020 13:36:28
+Unkown error @ 13-04-2020 17:21:15
 			
 --------------------------------------------------
-Error: 'NoneType' object has no attribute 'tag_name' @ 13-04-2020 13:36:32
-			Element None does not have required attribute
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:21:19
+			Element False does not have required attribute
 --------------------------------------------------
-Testing case no. @ 13-04-2020 13:39:10
-			Testing case no. @ 13-04-2020 13:39:55
-			2
+Browser quit @ 13-04-2020 17:21:23
+			Error:'bool' object has no attribute 'tag_name'
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:39:55
+Test finished with these results @ 13-04-2020 17:21:23
+			
+--------------------------------------------------
+http://scratchpd.com: @ 13-04-2020 17:21:23
+			Test started for host : @ 13-04-2020 17:22:29
 			scratchpd.com
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0311B640>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:39:55
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:22:51
+			http://scratchpd.com
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:39:58
+URL CHANGED @ 13-04-2020 17:22:51
+			http://scratchpd.com/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:22:51
+			http://scratchpd.com
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:22:56
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:23:02
 			
 --------------------------------------------------
-Testing case no. @ 13-04-2020 13:42:24
-			2
+Unkown error @ 13-04-2020 17:23:12
+			
 --------------------------------------------------
-Testing case no. @ 13-04-2020 13:43:02
-			2
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:23:16
+			Element False does not have required attribute
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:43:02
+Browser quit @ 13-04-2020 17:23:20
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:26:31
 			scratchpd.com
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0311B640>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:43:02
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:26:53
+			http://scratchpd.com
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:43:04
+URL CHANGED @ 13-04-2020 17:26:53
+			http://scratchpd.com/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:26:53
+			http://scratchpd.com
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:26:58
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:27:04
 			
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:43:04
+Unkown error @ 13-04-2020 17:27:14
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:27:18
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:27:22
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:27:24
 			google.ro
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64700): Max retries exceeded with url: /session/b60528880f95ac8a77ef7afe347c0ca5/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033D12B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:43:09
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:27:26
+			http://google.ro
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:43:13
+URL CHANGED @ 13-04-2020 17:27:26
+			https://www.google.ro/?gws_rd=ssl
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:27:26
+			http://google.ro
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:27:31
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:27:37
 			
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:43:13
+Unkown error @ 13-04-2020 17:27:45
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:27:49
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:27:53
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:27:55
 			python.org
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64700): Max retries exceeded with url: /session/b60528880f95ac8a77ef7afe347c0ca5/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033D1850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:43:18
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:27:58
+			http://python.org
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:43:22
-			
+URL CHANGED @ 13-04-2020 17:27:58
+			https://www.python.org/
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:43:22
+Finished request for @ 13-04-2020 17:27:58
+			http://python.org
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 13-04-2020 17:27:58
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 13-04-2020 17:27:58
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 13-04-2020 17:27:58
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:27:59
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:27:59
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:28:01
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 13-04-2020 17:28:01
+			Continuing the script
+--------------------------------------------------
+Succesfuly finished the test @ 13-04-2020 17:28:03
+			Browser closed with no error code !
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:28:05
 			www.bitacad.net
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64700): Max retries exceeded with url: /session/b60528880f95ac8a77ef7afe347c0ca5/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0311B478>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:43:27
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:28:10
+			http://www.bitacad.net
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:43:31
+URL CHANGED @ 13-04-2020 17:28:10
+			https://www.bitacad.net/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:28:10
+			http://www.bitacad.net
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:28:16
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:28:22
 			
 --------------------------------------------------
-Testing case no. @ 13-04-2020 13:43:42
-			2
+Unkown error @ 13-04-2020 17:28:30
+			
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:43:42
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:28:34
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:28:38
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test finished with these results @ 13-04-2020 17:28:38
+			
+--------------------------------------------------
+http://scratchpd.com: @ 13-04-2020 17:28:38
+			Test started for host : @ 13-04-2020 17:31:37
 			scratchpd.com
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x039CB640>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:43:43
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:31:59
+			http://scratchpd.com
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:43:45
+URL CHANGED @ 13-04-2020 17:31:59
+			http://scratchpd.com/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:31:59
+			http://scratchpd.com
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:32:04
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:32:10
 			
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:43:45
+Unkown error @ 13-04-2020 17:32:21
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:32:25
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:32:29
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:32:31
 			google.ro
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64776): Max retries exceeded with url: /session/6005b4c21a41673fb20ee650c474a3cc/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03C81280>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:43:49
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:32:32
+			http://google.ro
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:43:53
+URL CHANGED @ 13-04-2020 17:32:32
+			https://www.google.ro/?gws_rd=ssl
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:32:32
+			http://google.ro
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:32:37
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:32:44
 			
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:43:53
+Unkown error @ 13-04-2020 17:32:52
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:32:56
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:33:00
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:33:02
 			python.org
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64776): Max retries exceeded with url: /session/6005b4c21a41673fb20ee650c474a3cc/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03C81820>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:43:58
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:33:04
+			http://python.org
 --------------------------------------------------
-Browser exited with error @ 13-04-2020 13:44:02
-			
+URL CHANGED @ 13-04-2020 17:33:04
+			https://www.python.org/
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:44:02
+Finished request for @ 13-04-2020 17:33:04
+			http://python.org
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 13-04-2020 17:33:04
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 13-04-2020 17:33:04
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 13-04-2020 17:33:04
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:33:05
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:33:05
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:33:06
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 13-04-2020 17:33:06
+			Continuing the script
+--------------------------------------------------
+Succesfuly finished the test @ 13-04-2020 17:33:08
+			Browser closed with no error code !
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:33:10
 			www.bitacad.net
 --------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64776): Max retries exceeded with url: /session/6005b4c21a41673fb20ee650c474a3cc/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x039CB478>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:44:08
-			Connection could not be esteablished
+Requesting url  @ 13-04-2020 17:33:17
+			http://www.bitacad.net
 --------------------------------------------------
-Testing case no. @ 13-04-2020 13:44:52
-			2
+URL CHANGED @ 13-04-2020 17:33:17
+			https://www.bitacad.net/
 --------------------------------------------------
-Test started for host : @ 13-04-2020 13:44:52
+Finished request for @ 13-04-2020 17:33:17
+			http://www.bitacad.net
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:33:22
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:33:28
+			
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:33:36
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:33:40
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:33:44
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test finished with these results @ 13-04-2020 17:33:44
+			
+--------------------------------------------------
+http://scratchpd.com: @ 13-04-2020 17:33:44
+			0.01%
+--------------------------------------------------
+http://google.ro: @ 13-04-2020 17:33:44
+			0.01%
+--------------------------------------------------
+http://python.org: @ 13-04-2020 17:33:44
+			0.03%
+--------------------------------------------------
+http://www.bitacad.net: @ 13-04-2020 17:33:44
+			0.01%
+--------------------------------------------------
+Overall result : @ 13-04-2020 17:33:44
+			0.0
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:34:26
 			scratchpd.com
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0376C640>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:44:52
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:44:54
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:44:54
-			google.ro
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64892): Max retries exceeded with url: /session/51e0505864cd431654623d4955ed1f70/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03A21298>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:44:59
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:45:03
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:45:03
-			python.org
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64892): Max retries exceeded with url: /session/51e0505864cd431654623d4955ed1f70/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03A21838>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:45:08
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:45:12
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:45:12
-			www.bitacad.net
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=64892): Max retries exceeded with url: /session/51e0505864cd431654623d4955ed1f70/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0376C478>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:45:17
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:45:21
-			
---------------------------------------------------
-Testing case no. @ 13-04-2020 13:54:16
-			2
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:54:16
-			scratchpd.com
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0359B640>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 13:54:16
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:54:18
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:54:18
-			google.ro
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=49606): Max retries exceeded with url: /session/068542ba2a7b7bb7a1246cf61355a032/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03851298>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:54:22
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:54:26
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:54:26
-			python.org
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=49606): Max retries exceeded with url: /session/068542ba2a7b7bb7a1246cf61355a032/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03851838>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:54:31
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:54:35
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 13:54:35
-			www.bitacad.net
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=49606): Max retries exceeded with url: /session/068542ba2a7b7bb7a1246cf61355a032/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0359B478>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 13:54:40
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 13:54:44
-			
---------------------------------------------------
-Testing case no. @ 13-04-2020 14:00:08
-			2
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:00:08
-			scratchpd.com
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0314B670>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 14:00:08
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:00:10
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:00:10
-			google.ro
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=50284): Max retries exceeded with url: /session/66701500631cb2baecabb601597c24b0/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0314B400>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:00:15
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:00:19
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:00:19
-			python.org
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=50284): Max retries exceeded with url: /session/66701500631cb2baecabb601597c24b0/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033E1730>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:00:27
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:00:31
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:00:31
-			www.bitacad.net
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=50284): Max retries exceeded with url: /session/66701500631cb2baecabb601597c24b0/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033E1358>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:00:38
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:00:42
-			
---------------------------------------------------
-Testing case no. @ 13-04-2020 14:04:51
-			2
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:04:51
-			scratchpd.com
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0319B508>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 14:04:51
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:04:54
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:04:54
-			google.ro
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=50795): Max retries exceeded with url: /session/b8f63969f35f16f934cd828a372ece6c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03453160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:04:58
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:05:02
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:05:02
-			python.org
---------------------------------------------------
-Connection ERROR:
-HTTPSConnectionPool(host='python.org', port=443): Max retries exceeded with url: https://python.org/ (Caused by ResponseError('too many redirects')) @ 13-04-2020 14:05:03
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:05:07
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:05:07
-			www.bitacad.net
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=50795): Max retries exceeded with url: /session/b8f63969f35f16f934cd828a372ece6c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03453BC8>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:05:11
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:05:15
-			
---------------------------------------------------
-Testing case no. @ 13-04-2020 14:09:02
-			2
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:09:02
-			scratchpd.com
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0311B508>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 14:09:02
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:09:04
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:09:04
-			google.ro
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=51119): Max retries exceeded with url: /session/8cb60c181ba7d60daee2cfd125c2d33e/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033D4130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:09:09
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:09:13
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:09:13
-			python.org
---------------------------------------------------
-Connection ERROR:
-HTTPSConnectionPool(host='python.org', port=443): Max retries exceeded with url: https://python.org/ (Caused by ResponseError('too many redirects')) @ 13-04-2020 14:09:13
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:09:18
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:09:18
-			www.bitacad.net
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=51119): Max retries exceeded with url: /session/8cb60c181ba7d60daee2cfd125c2d33e/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033D4B98>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:09:23
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:09:27
-			
---------------------------------------------------
-Testing case no. @ 13-04-2020 14:22:27
-			2
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:22:27
-			scratchpd.com
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0314B658>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 13-04-2020 14:22:28
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:22:30
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:22:30
-			google.ro
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=52165): Max retries exceeded with url: /session/4e5b7f2287513ce509cf2da28af65e25/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033E12E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:22:34
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:22:38
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:22:38
-			python.org
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=52165): Max retries exceeded with url: /session/4e5b7f2287513ce509cf2da28af65e25/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033E1880>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:22:43
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:22:48
-			
---------------------------------------------------
-Test started for host : @ 13-04-2020 14:22:48
-			www.bitacad.net
---------------------------------------------------
-Connection ERROR:
-HTTPConnectionPool(host='127.0.0.1', port=52165): Max retries exceeded with url: /session/4e5b7f2287513ce509cf2da28af65e25/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0314B490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 13-04-2020 14:22:53
-			Connection could not be esteablished
---------------------------------------------------
-Browser exited with error @ 13-04-2020 14:22:57
-			
 --------------------------------------------------

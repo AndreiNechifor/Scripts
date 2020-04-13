@@ -1,3 +1,4 @@
+  
 # 06/04/2020
 # Andrei Nechifor
 # python.org > Search for pep 318 > assert search page > open first link > assert first link page
@@ -21,9 +22,9 @@ class AccesPep318():
         self.opts=Options()
         self.opts.headless=self.without_window
         self.browser=webdriver.Chrome('chromedriver',options=self.opts)
-        self.succes=0
         self.webdriver=None
-        self.r=PoolManager(5)
+        self.r=poolmanager.PoolManager()
+        self.check_sum=0
         
     @staticmethod
     def logging(event,content):
@@ -56,8 +57,9 @@ class AccesPep318():
         self.host_name=url[url.find("//")+2:]
         self.logging('Test started for host :',self.host_name)
         try:    
-                self.r.urlopen('GET',url)
+                self.r.request('GET',url)
                 self.browser.get(url)
+                self.logging("Requesting url ",url)
                 self.logging("URL CHANGED",self.browser.current_url)
 
         except exceptions.MaxRetryError as e:
@@ -66,7 +68,7 @@ class AccesPep318():
                 self.logging("Browser exited with error","")
                 self.succes=0
                 return False
-
+        self.logging("Finished request for",url)
         return True # No error occured.
     
     # First page method
@@ -92,10 +94,8 @@ class AccesPep318():
             self.logging('Browser quit','Error:%s'%(e))
             self.succes=0
             return False
-        
         self.succes=1
         return True
-           
     # Search page method 
     def open_search_result(self):
         try:
@@ -124,53 +124,44 @@ class AccesPep318():
                 print("Browser will close in 5 seconds")
                 time.sleep(5)
             self.browser.quit()
-            self.succes=1
+            
             self.logging('Succesfuly finished the test','Browser closed with no error code !')
         return True
+    
+    # Reseting browser and webdriver@search
+    def update_navigators(self):
+        self.browser=webdriver.Chrome('chromedriver',options=self.opts)
+        self.webdriver=None       
+        self.check_sum=0
     # Testing method is calling all the methods defined previously
     def test_method(self,url):
-        
+        self.update_navigators()
         if not(self.request_url(url)):
-            self.r.clear()
             return 0
+        else:
+            self.check_sum+=1
+            
         if not(self.first_page()):
-            self.r.clear()
             return 0
+        else:
+            self.check_sum+=1
         if not(self.open_search_result()):
-            self.r.clear()
             return 0
+        else:
+            self.check_sum+=1
         return 1
-        
-# Test area
+
+# Test Area
+succes_rate=0
 succes_counter=0
-element=AccesPep318(without_window=False)
-if(int(sys.argv[1])==1):
-    print("Running test number 1")
-    # Case 1 # working
-    element.logging('Testing case no.',"1")
-    element.test_method('http://python.org')
-elif(int(sys.argv[1])==2):
-
-    # Case 2 # not working
-    print("Running test number 2")
-    element.logging('Testing case no.',"2")
-    test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
-    for link in  test_pages:
-        succes_counter+=element.test_method(link)
-    succes_rate=succes_counter/len(test_pages)*100
-    print("Test finished. Score :",str(succes_rate))
-
-elif(int(sys.argv[1])==3 ):
-    # Case 3 # working
-    print("Running test number 3")
-    element.logging('Testing case no.',"3")
-    test_pool=Pool()
-    test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
-    for link in test_pool.imap(element.test_method,test_pages):
-        succes_counter+=element.test_method(link)
-    succes_rate=succes_counter/len(test_pages)*100
-    print("Test finished. Score :",str(succes_rate))
-else:
-    print(sys.argv)
-    print('Testul nu exista')
-print(succes_rate)
+test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
+page_scores={}
+element=AccesPep318(without_window=True)
+for e in test_pages:
+    element.test_method(e)
+    page_scores[e]=str(element.check_sum/3*100)+"%"
+element.logging("Test finished with these results","")
+for independent_score in page_scores:
+    element.logging(independent_score+":",page_scores[independent_score])
+succes_rate=succes_counter/len(test_pages)*100
+element.logging("Overall result :",str(succes_rate))
