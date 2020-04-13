@@ -1,21 +1,39 @@
   
-# 06/04/2020
+# 13/04/2020
 # Andrei Nechifor
-# python.org > Search for pep 318 > assert search page > open first link > assert first link page
-# Class edit
+# Test pages testing improoved
 
 import sys
 import time
 from selenium import webdriver
 from multiprocessing import Pool
-from urllib3 import poolmanager,exceptions,PoolManager,HTTPConnectionPool,HTTPSConnectionPool
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from urllib3 import poolmanager,exceptions,PoolManager,HTTPConnectionPool,HTTPSConnectionPool
 
 class AccesPep318():
+    """This class is designed to acces "PEP 318 -- Decorators for Functions and Methods" article from Python.org. 
+        It tests to find out specific elements of pages that are required to be navigated until the final destination
+        METHODS :
+            INIT(self,withoud_window)
+            LOGGING(event,content)
+            CPX(xpath,element_name)
+            REQUEST_URL(url)
+            FIRST_PAGE()
+            OPEN_SEARCH_PAGE()
+        ATTRIBUTES :
+            -hostname
+            -url
+            -browser
+            -webdriver
+            -searh_box
+            -go_button
+            -search_page_header
+                        ...
+        """
 
     def __init__(self,without_window=False):
         self.without_window=without_window
@@ -28,6 +46,9 @@ class AccesPep318():
         
     @staticmethod
     def logging(event,content):
+        """Writing events into the file after formating as Event-Content@Time"""
+
+
         logger = open('logger.txt','a+')
         time_to_write  = time.strftime(("%d-%m-%Y %H:%M:%S"))
         logger.writelines("{0} @ {1}{2}".format(event,time_to_write,"\n"))
@@ -37,6 +58,10 @@ class AccesPep318():
         logger.close()
         
     def cpx(self,xpath,element_name):
+        """CPX stands for Check Presence By Xpath. 
+            This method requires two parameters, as strings, trying to find the x-path located element."""
+
+            
         try:
             self.webdriver=WebDriverWait(self.browser,5).until(EC.presence_of_element_located((By.XPATH,xpath)))
             self.logging('Looking for %s on %s page.' %(element_name,self.browser.current_url),'Continuing the script')
@@ -53,6 +78,8 @@ class AccesPep318():
 
     # Request the url
     def request_url(self,url):
+
+
         """ This method request the url, and treats the errors that are suposed to appear"""
         self.host_name=url[url.find("//")+2:]
         self.logging('Test started for host :',self.host_name)
@@ -73,8 +100,9 @@ class AccesPep318():
     
     # First page method
     def first_page(self):
-            
         """ This method request first page objects, namely Python.org home-page and submit their specific actions"""
+
+
         self.cpx('//*[@id="homepage"]','Python logo on main page')
         search_box = self.cpx('//*[@id="id-search-field"]','Search form on python.org landing page')
         go_button = self.cpx('//*[@id="submit"]','GO Button')
@@ -98,6 +126,9 @@ class AccesPep318():
         return True
     # Search page method 
     def open_search_result(self):
+        """ This method request search objects, namely Search Python.org page and submit their specific actions"""
+
+         
         try:
             search_page_header = self.cpx('//*[@id="content"]/div/section/h2','Search page header')
             assert search_page_header.text =="Search Python.org"
@@ -124,17 +155,22 @@ class AccesPep318():
                 print("Browser will close in 5 seconds")
                 time.sleep(5)
             self.browser.quit()
-            
             self.logging('Succesfuly finished the test','Browser closed with no error code !')
         return True
     
     # Reseting browser and webdriver@search
     def update_navigators(self):
+        """This method reset the navigator for the next testing page, and also increment the check_sum 
+        which is used in mesuring the succes rate for each individual test"""
         self.browser=webdriver.Chrome('chromedriver',options=self.opts)
         self.webdriver=None       
         self.check_sum=0
+    
     # Testing method is calling all the methods defined previously
     def test_method(self,url):
+        """This is the method that calls all the previously declared methods"""
+
+
         self.update_navigators()
         if not(self.request_url(url)):
             return 0
@@ -151,17 +187,21 @@ class AccesPep318():
             self.check_sum+=1
         return 1
 
-# Test Area
+# Declaration area
 succes_rate=0
 succes_counter=0
-test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
 page_scores={}
 element=AccesPep318(without_window=True)
+test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
+
+# Testing area
 for e in test_pages:
     succes_counter=element.test_method(e)
     page_scores[e]=str(element.check_sum/3*100)+"%"
+
+# Logging area
 element.logging("Test finished with these results","")
-for independent_score in page_scores:
+for independent_score in page_scores:# Looping through individual test scores
     element.logging(independent_score+":",page_scores[independent_score])
 succes_rate=succes_counter/len(test_pages)*100
 element.logging("Overall result :",str(succes_rate))

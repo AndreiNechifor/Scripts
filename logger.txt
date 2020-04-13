@@ -459,3 +459,97 @@ Waiting time for Python logo on main page excedeed @ 13-04-2020 17:35:26
 			self.browser closed with error : Message: 
 
 --------------------------------------------------
+Unkown error @ 13-04-2020 17:35:32
+			
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:35:40
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:35:44
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:35:48
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:35:50
+			python.org
+--------------------------------------------------
+Requesting url  @ 13-04-2020 17:35:52
+			http://python.org
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:35:52
+			https://www.python.org/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:35:52
+			http://python.org
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 13-04-2020 17:35:52
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 13-04-2020 17:35:52
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 13-04-2020 17:35:52
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:35:55
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 13-04-2020 17:35:55
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:35:55
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 13-04-2020 17:35:56
+			Continuing the script
+--------------------------------------------------
+Succesfuly finished the test @ 13-04-2020 17:35:58
+			Browser closed with no error code !
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:36:00
+			www.bitacad.net
+--------------------------------------------------
+Requesting url  @ 13-04-2020 17:36:05
+			http://www.bitacad.net
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:36:05
+			https://www.bitacad.net/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:36:05
+			http://www.bitacad.net
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:36:11
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:36:17
+			
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:36:25
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:36:29
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:36:33
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test finished with these results @ 13-04-2020 17:36:33
+			
+--------------------------------------------------
+http://scratchpd.com: @ 13-04-2020 17:36:33
+			33.33333333333333%
+--------------------------------------------------
+http://google.ro: @ 13-04-2020 17:36:33
+			33.33333333333333%
+--------------------------------------------------
+http://python.org: @ 13-04-2020 17:36:33
+			100.0%
+--------------------------------------------------
+http://www.bitacad.net: @ 13-04-2020 17:36:33
+			33.33333333333333%
+--------------------------------------------------
+Overall result : @ 13-04-2020 17:36:33
+			0.0
+--------------------------------------------------
