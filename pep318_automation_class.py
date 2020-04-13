@@ -158,7 +158,7 @@ test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','htt
 page_scores={}
 element=AccesPep318(without_window=True)
 for e in test_pages:
-    element.test_method(e)
+    succes_counter=element.test_method(e)
     page_scores[e]=str(element.check_sum/3*100)+"%"
 element.logging("Test finished with these results","")
 for independent_score in page_scores:

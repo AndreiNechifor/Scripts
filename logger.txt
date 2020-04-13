@@ -418,3 +418,44 @@ Overall result : @ 13-04-2020 17:33:44
 Test started for host : @ 13-04-2020 17:34:26
 			scratchpd.com
 --------------------------------------------------
+Requesting url  @ 13-04-2020 17:34:48
+			http://scratchpd.com
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:34:48
+			http://scratchpd.com/
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:34:48
+			http://scratchpd.com
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:34:53
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:34:59
+			
+--------------------------------------------------
+Unkown error @ 13-04-2020 17:35:09
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 13-04-2020 17:35:13
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 13-04-2020 17:35:17
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 13-04-2020 17:35:19
+			google.ro
+--------------------------------------------------
+Requesting url  @ 13-04-2020 17:35:21
+			http://google.ro
+--------------------------------------------------
+URL CHANGED @ 13-04-2020 17:35:21
+			https://www.google.ro/?gws_rd=ssl
+--------------------------------------------------
+Finished request for @ 13-04-2020 17:35:21
+			http://google.ro
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 13-04-2020 17:35:26
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
