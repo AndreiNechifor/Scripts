@@ -168,27 +168,20 @@ class AccesPep318():
         self.browser=webdriver.Chrome('chromedriver',options=self.opts)
         self.webdriver=None       
         self.check_sum=0
-    '''
+
     # Testing method is calling all the methods defined previously
+    def test_method(self,url):
+        """This is the method that calls all the previously declared methods"""
+        self.update_navigators()
+        if not(self.request_url(url)):
+            return 0                
+        if not(self.first_page()):    
+            return 0
+        if not(self.open_search_result()):
+            return 0
+        else:          
+            return "Test passed"
 
-# Declaration area
-'''
-'''succes_rate=0
-succes_counter=0
-page_scores={}
-element=AccesPep318(without_window=True)
-test_pages = ['http://scratchpd.com','http://google.ro','http://python.org','http://www.bitacad.net']
 
-# Testing area
-for e in test_pages:
-    succes_counter=element.test_method(e)
-    page_scores[e]=str(element.check_sum/3*100)+"%"
 
-# Logging area
-element.logging("Test finished with these results","")
-for independent_score in page_scores:# Looping through individual test scores
-    element.logging(independent_score+":",page_scores[independent_score])
-succes_rate=succes_counter/len(test_pages)*100
-element.logging("Overall result :",str(succes_rate))
-'''
 
