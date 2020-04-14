@@ -179,9 +179,9 @@ class AccesPep318():
             return 0
         if not(self.open_search_result()):
             return 0
-        else:          
-            return "Test passed"
+        return "Test passed"
 
-
-
+element=AccesPep318(without_window=True)
+for e in ['http://scratchpd.com','http://google.ro','https://python.org','http://www.bitacad.net']:
+    print(element.test_method(e))
 
