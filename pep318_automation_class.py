@@ -3,6 +3,7 @@
 # Andrei Nechifor
 # Test pages testing improoved
 
+import os
 import sys
 import time
 from selenium import webdriver
@@ -13,6 +14,8 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib3 import poolmanager,exceptions,PoolManager,HTTPConnectionPool,HTTPSConnectionPool
+
+sys.path.append(os.curdir)
 
 class AccesPep318():
     """This class is designed to acces "PEP 318 -- Decorators for Functions and Methods" article from Python.org. 
@@ -165,30 +168,12 @@ class AccesPep318():
         self.browser=webdriver.Chrome('chromedriver',options=self.opts)
         self.webdriver=None       
         self.check_sum=0
-    
+    '''
     # Testing method is calling all the methods defined previously
-    def test_method(self,url):
-        """This is the method that calls all the previously declared methods"""
-
-
-        self.update_navigators()
-        if not(self.request_url(url)):
-            return 0
-        else:
-            self.check_sum+=1
-            
-        if not(self.first_page()):
-            return 0
-        else:
-            self.check_sum+=1
-        if not(self.open_search_result()):
-            return 0
-        else:
-            self.check_sum+=1
-        return 1
 
 # Declaration area
-succes_rate=0
+'''
+'''succes_rate=0
 succes_counter=0
 page_scores={}
 element=AccesPep318(without_window=True)
@@ -205,3 +190,5 @@ for independent_score in page_scores:# Looping through individual test scores
     element.logging(independent_score+":",page_scores[independent_score])
 succes_rate=succes_counter/len(test_pages)*100
 element.logging("Overall result :",str(succes_rate))
+'''
+

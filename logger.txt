@@ -553,3 +553,341 @@ http://www.bitacad.net: @ 13-04-2020 17:36:33
 Overall result : @ 13-04-2020 17:36:33
 			0.0
 --------------------------------------------------
+Test started for host : @ 14-04-2020 11:50:33
+			python.org
+--------------------------------------------------
+Requesting url  @ 14-04-2020 11:50:35
+			http://python.org
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 11:50:35
+			https://www.python.org/
+--------------------------------------------------
+Finished request for @ 14-04-2020 11:50:35
+			http://python.org
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 14-04-2020 11:50:35
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 14-04-2020 11:50:35
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 14-04-2020 11:50:35
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 14-04-2020 11:50:36
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 14-04-2020 11:50:36
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 11:50:37
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 14-04-2020 11:50:37
+			Continuing the script
+--------------------------------------------------
+Succesfuly finished the test @ 14-04-2020 11:50:39
+			Browser closed with no error code !
+--------------------------------------------------
+Test started for host : @ 14-04-2020 11:51:11
+			python.org
+--------------------------------------------------
+Requesting url  @ 14-04-2020 11:51:13
+			http://python.org
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 11:51:13
+			https://www.python.org/
+--------------------------------------------------
+Finished request for @ 14-04-2020 11:51:13
+			http://python.org
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 14-04-2020 11:51:13
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 14-04-2020 11:51:13
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 14-04-2020 11:51:13
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 14-04-2020 11:51:14
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 14-04-2020 11:51:14
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 11:51:15
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 14-04-2020 11:51:15
+			Continuing the script
+--------------------------------------------------
+Succesfuly finished the test @ 14-04-2020 11:51:17
+			Browser closed with no error code !
+--------------------------------------------------
+Test started for host : @ 14-04-2020 11:51:52
+			google.org
+--------------------------------------------------
+Requesting url  @ 14-04-2020 11:51:55
+			http://google.org
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 11:51:55
+			https://www.google.org/
+--------------------------------------------------
+Finished request for @ 14-04-2020 11:51:55
+			http://google.org
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 14-04-2020 11:52:00
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 14-04-2020 11:52:06
+			
+--------------------------------------------------
+Unkown error @ 14-04-2020 11:52:14
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 14-04-2020 11:52:20
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 14-04-2020 11:52:24
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 14-04-2020 11:55:40
+			google.org
+--------------------------------------------------
+Requesting url  @ 14-04-2020 11:55:43
+			http://google.org
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 11:55:43
+			https://www.google.org/
+--------------------------------------------------
+Finished request for @ 14-04-2020 11:55:43
+			http://google.org
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 14-04-2020 11:55:48
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 14-04-2020 11:55:54
+			
+--------------------------------------------------
+Unkown error @ 14-04-2020 11:56:02
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 14-04-2020 11:56:08
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 14-04-2020 11:56:12
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 14-04-2020 11:56:12
+			google.org
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='127.0.0.1', port=55124): Max retries exceeded with url: /session/122841bf1dfe0c8e3bff3ad5a997d8ce/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03C05718>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')) @ 14-04-2020 11:56:16
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 11:56:20
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:47:16
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0315BC10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:47:16
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:47:18
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:47:18
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x033F4028>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:47:18
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:47:22
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:48:20
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0376D100>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:48:20
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:48:22
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:48:22
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x039CCA18>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:48:22
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:48:26
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:49:42
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03CAF070>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:49:42
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:49:45
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:49:45
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03F0D970>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:49:45
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:49:49
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:50:25
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03BAF088>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:50:25
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:50:27
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:50:27
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03E0E970>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:50:27
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:50:31
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:54:15
+			scratchpd.com
+--------------------------------------------------
+Connection ERROR:
+HTTPConnectionPool(host='scratchpd.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0454C0D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')) @ 14-04-2020 12:54:15
+			Connection could not be esteablished
+--------------------------------------------------
+Browser exited with error @ 14-04-2020 12:54:17
+			
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:54:19
+			google.ro
+--------------------------------------------------
+Requesting url  @ 14-04-2020 12:54:21
+			http://google.ro
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 12:54:21
+			https://www.google.ro/?gws_rd=ssl
+--------------------------------------------------
+Finished request for @ 14-04-2020 12:54:21
+			http://google.ro
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 14-04-2020 12:54:26
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 14-04-2020 12:54:32
+			
+--------------------------------------------------
+Unkown error @ 14-04-2020 12:54:40
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 14-04-2020 12:54:44
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 14-04-2020 12:54:48
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:54:50
+			python.org
+--------------------------------------------------
+Requesting url  @ 14-04-2020 12:54:52
+			http://python.org
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 12:54:52
+			https://www.python.org/
+--------------------------------------------------
+Finished request for @ 14-04-2020 12:54:52
+			http://python.org
+--------------------------------------------------
+Looking for Python logo on main page on https://www.python.org/ page. @ 14-04-2020 12:54:52
+			Continuing the script
+--------------------------------------------------
+Looking for Search form on python.org landing page on https://www.python.org/ page. @ 14-04-2020 12:54:52
+			Continuing the script
+--------------------------------------------------
+Looking for GO Button on https://www.python.org/ page. @ 14-04-2020 12:54:52
+			Continuing the script
+--------------------------------------------------
+Looking for Search page header on https://www.python.org/search/?q=Decorator&submit= page. @ 14-04-2020 12:54:54
+			Continuing the script
+--------------------------------------------------
+Looking for Required link on https://www.python.org/search/?q=Decorator&submit= page. @ 14-04-2020 12:54:54
+			Continuing the script
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 12:54:55
+			https://www.python.org/dev/peps/pep-0318/
+--------------------------------------------------
+Looking for Header of first link on https://www.python.org/dev/peps/pep-0318/ page. @ 14-04-2020 12:54:55
+			Continuing the script
+--------------------------------------------------
+Succesfuly finished the test @ 14-04-2020 12:54:57
+			Browser closed with no error code !
+--------------------------------------------------
+Test started for host : @ 14-04-2020 12:54:59
+			www.bitacad.net
+--------------------------------------------------
+Requesting url  @ 14-04-2020 12:55:05
+			http://www.bitacad.net
+--------------------------------------------------
+URL CHANGED @ 14-04-2020 12:55:05
+			https://www.bitacad.net/
+--------------------------------------------------
+Finished request for @ 14-04-2020 12:55:05
+			http://www.bitacad.net
+--------------------------------------------------
+Waiting time for Python logo on main page excedeed @ 14-04-2020 12:55:11
+			self.browser closed with error : Message: 
+
+--------------------------------------------------
+Unkown error @ 14-04-2020 12:55:17
+			
+--------------------------------------------------
+Unkown error @ 14-04-2020 12:55:25
+			
+--------------------------------------------------
+Error: 'bool' object has no attribute 'tag_name' @ 14-04-2020 12:55:29
+			Element False does not have required attribute
+--------------------------------------------------
+Browser quit @ 14-04-2020 12:55:33
+			Error:'bool' object has no attribute 'tag_name'
+--------------------------------------------------
+Test finished with these results @ 14-04-2020 12:55:33
+			
+--------------------------------------------------
+http://scratchpd.com: @ 14-04-2020 12:55:33
+			0.0%
+--------------------------------------------------
+http://google.ro: @ 14-04-2020 12:55:33
+			33.33333333333333%
+--------------------------------------------------
+http://python.org: @ 14-04-2020 12:55:33
+			100.0%
+--------------------------------------------------
+http://www.bitacad.net: @ 14-04-2020 12:55:33
+			33.33333333333333%
+--------------------------------------------------
+Overall result : @ 14-04-2020 12:55:33
+			0.0
+--------------------------------------------------
